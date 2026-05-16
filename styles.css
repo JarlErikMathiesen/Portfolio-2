@@ -1,0 +1,63 @@
+h1 {
+  font-size: clamp(5rem, 10vw, 9rem);
+  margin: 0;
+  z-index: 12;
+  bottom: -53px;
+  position: relative;
+  left: 5px;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+:root {
+  --accent-green: #025e4c;
+  --accent-green-light: #dcebe6;
+
+  --accent-gold: #d8c64f;
+  --accent-gold-light: #f3edd0;
+}
+
+.banner {
+  background-color: var(--accent-gold);
+  font-size: clamp(1rem, 10vw, 28px);
+  padding: 5px;
+  margin: 0 100px 0 0;
+
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  max-width: 700px;
+  margin-top: 4rem;
+  margin-left: 0.5rem;
+}
+
+.intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.intro span {
+  color: var(--accent-green);
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 700px) {
+  .banner {
+    padding: 1px 100px;
+    text-align: end;
+  }
+}
