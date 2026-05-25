@@ -1,14 +1,19 @@
 h1 {
-  font-size: clamp(5rem, 10vw, 9rem);
+  font-size: clamp(60px, 10vw, 160rem);
   margin: 0;
   z-index: 12;
-  bottom: -53px;
+  bottom: -40px;
   position: relative;
   left: 5px;
 }
 
 body {
   font-family: 'Manrope', 'Segoe UI', Roboto, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  margin: 30px;
 }
 
 :root {
@@ -33,6 +38,24 @@ body {
   margin: 0 100px 0 0;
 
   clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+}
+
+footer {
+  margin-top: 6rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background-color: var(--accent-gold);
+
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-primary);
+  padding: 30px;
 }
 
 .grid {
@@ -182,6 +205,10 @@ body {
 }
 
 @media (min-width: 700px) {
+  h1 {
+    bottom: -53px;
+  }
+
   .banner {
     padding: 1px 100px;
     text-align: end;
